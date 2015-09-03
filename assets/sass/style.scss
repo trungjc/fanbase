@@ -1,2 +1,6 @@
-
-@import "../lib/_bootstrap.scss";
+// import bootstrap library
+@import "../lib/bootstrap";
+// import common section
+@import "regions/regions";
+//import responsive
+@import "responsive.scss";
