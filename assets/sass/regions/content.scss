@@ -1,11 +1,16 @@
 
 .content{
+    padding-bottom : 66px;
 	.main{
-		padding: 30px;
-		margin: auto;
-		background: rgba(255, 255, 255, 0.2);
-		.posted-date{
-			color: #689b00;
+		padding: 30px 0;      
+        background: #f6f6f6;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+		.content-body {
+              width: 80%;
+            margin: 0px auto;
+        }
+        .posted-date{
+			color: #969696;
 			font-family: "ProximaNova-Regular";
 		}
 		.title-video{
@@ -20,9 +25,10 @@
 		.media-title{
 		}
 		.other-media-tab{
-			background: rgba(0, 0, 0, 0.05);
+			background: #f0f0f0;
 		}
-		.nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a{
+		.nav-tabs-justified > li > a,
+        .nav-tabs.nav-justified > li > a{
 			border-radius: 0;
 			background: rgba(0, 0, 0, 0.05);
 			white-space: nowrap;
@@ -33,7 +39,9 @@
 			border-right: 1px solid rgba(255, 255, 255, 0.8);
 			outline: 1px solid rgba(0, 0, 0, 0.1);
 		}
-		.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+		.nav-tabs > li.active > a, 
+        .nav-tabs > li.active > a:hover, 
+        .nav-tabs > li.active > a:focus{
 			background: #ff9600;
 			color: white;
 			border: none;
@@ -47,26 +55,26 @@
 	}
 }
 .form-container{
-	background: rgba(255, 255, 255, 0.4);
+	background: #ffffff;
 	border-radius: 6px;
 	padding: 20px 10px 10px;
 	margin-bottom: 15px;
 	.round-icon{
-		background: rgba(0, 0, 0, 0.1);
-		border-radius: 20px;
-		-webkit-border-radius: 20px;
+		background: #eeeeee;
+		border-radius: 50%;
 		display: block;
-	    height: 35px;
+	    height: 38px;
 	    margin: auto;
-	    padding: 8px 8px 0px 7px;
-	    width: 35px;
+	    line-height: 44px;
+        text-align: center;
+	    width: 38px;
 		.fa-twitter{
-			font-size: 18px;
-			color: #a8bdd0;
+			font-size: 19px;
+			color: #9ed2e8;
 		}
 		.fa-facebook{
-			font-size: 18px;
-			color: #4f5189;
+			font-size: 19px;
+			color: #3b5a99;
 		}
 	}
 	.form-container-title{
@@ -74,20 +82,47 @@
 	}
 }
 .slider-menu{
-	padding: 50px 0;
+	padding: 50px 0 0;
+    &:before,&:after {
+        background: #888;
+        //content:"";
+        position:absolute;
+        top:0;
+        left: 0;
+        height:100%;
+        width: 1px;        
+    }
+    
+    &:after {
+        right: 4%;
+        left:auto;
+    }
 	position: relative;
 	.scrollbar{
-		right: -10px;
+		right: -12px;
+        width: 8px;
+         background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 	}
-	.prevPage{
-		position: absolute;
-		top: 0;
-	}
+	
+    .scrollbar .handle {
+        background: #a2a1a1;  
+        border-radius: 20px;
+    }
 	.controls{
 		margin: 10px 0;
+        padding-right: 14px; 
 	}
 	.btn{
-		background: rgba(0, 0, 0, 0.1);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7d7d7+0,d1d1d1+47,cacaca+100 */
+        background: #d7d7d7; /* Old browsers */
+        background: -moz-linear-gradient(top,  #d7d7d7 0%, #d1d1d1 47%, #cacaca 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d7d7d7), color-stop(47%,#d1d1d1), color-stop(100%,#cacaca)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #d7d7d7 0%,#d1d1d1 47%,#cacaca 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #d7d7d7 0%,#d1d1d1 47%,#cacaca 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #d7d7d7 0%,#d1d1d1 47%,#cacaca 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #d7d7d7 0%,#d1d1d1 47%,#cacaca 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', endColorstr='#cacaca',GradientType=0 ); /* IE6-9 */
+        border: none!important;
 		width: 100%;
 		height: 40px;
 		border-radius: 0;
@@ -97,39 +132,90 @@
 			color: rgba(0, 0, 0, 0.3);
 		}
 	}
+    .prevPage{
+		position: absolute;
+		top: 0;
+        left: 0;
+        width: 95%;
+	}
 	.frame{
 		border: none;
+        
+        // background:#f6f6f6;
+        //box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        .items {
+         padding-right: 14px;
+        }
 		ul.items li{
-			background: rgba(255, 255, 255, 0.4);
+			background: #fff;
 			margin: 4px 0;
-			border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+			border-bottom: 3px solid #c2c2c2;
 			padding: 5px 5px 10px 5px;
-			height: 110px;
+			min-height: 110px;
 			line-height: 20px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 			.title-media{
 				font-size: 14px;
 				font-family: "ProximaNova-Light";
-				color: #585858;
+				color: #9f9f9f;
 			}
 			.media{
 				margin-top: 0;
 				.date{
 					font-size: 14px;
 					text-align: left;
-					color: #585858;
+					color: #545454;
 					font-weight: bold;
 				}
 				.video-info{
 					font-size: 18px;
 					text-align: left;
-					color: #585858;
+					color: #545454;
 				}
 			}
 		}
 		ul.items li.active{
-			background: rgba(0, 0, 0, 0.1);
+			background: #e8e8e8;
+            position:relative;
+            box-shadow: 1px 1px 3px white inset;
+            &:after {
+                 background: rgba(0, 0, 0, 0) url("../images/arrow-slide.png") no-repeat scroll left top / 100% auto;
+                content: "";
+                display: block;
+                height: 40px;
+                margin-top: -20px;
+                position: absolute;
+                right: -12px;
+                top: 50%;
+                width: 10px;
+            }
 		}
 	}
 	
 	
+}
+
+
+.social-link {
+    position: fixed;
+    right:0 ;
+    top: 50%;
+    margin-top: -32px;
+    a {
+        display: block;
+        color: white;
+        font-size:30px;
+        width:53px;
+        display: block;
+        height: 55px;
+        text-align: center;
+        &:hover {opacity: 0.8}
+        i {
+            position: relative;
+            top: 8px;
+        }
+    }
+    .face-icon {background: #215a96}
+    .twitter-icon {background: #3eb4e3}
+    .google-icon {background: #f43e32}
 }

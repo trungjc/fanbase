@@ -1,6 +1,9 @@
 
 footer{
-	background: rgba(0, 0, 0, 0.1);
+	background: #e1e1e1;
+      bottom: 0;
+    position: fixed;
+    width: 100%;
 	.footer-menu{
 		text-align: center;
 		li{
@@ -12,8 +15,11 @@ footer{
 			line-height: 55px; 
 			a{
 				color: #989898;
-				font-family: tahoma;
+				font-family: 'ProximaNova-Light',arial; 
 				font-weight: normal;
+                font-size: 14px;
+                font-weight: 300;
+                font-style: normal;
 			}
 		}
 	}
