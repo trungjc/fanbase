@@ -7641,7 +7641,7 @@ nav:not(.mm-menu) {
   left: 0; }
 
 .header {
-  padding: 12px 40px;
+  padding: 12px 0px;
   background: #152c47; }
   .header .social-icon {
     font-size: 20px;
@@ -7689,25 +7689,31 @@ nav:not(.mm-menu) {
     .content .main .nav-tabs-justified > li > a, .content .main .nav-tabs.nav-justified > li > a,
     .content .main .nav-tabs.nav-justified > li > a {
       border-radius: 0;
-      background: rgba(0, 0, 0, 0.05);
+      background: #e1dfdf;
       white-space: nowrap;
       overflow: hidden;
       color: #585858;
       border: none;
-      border-top: 1px solid rgba(255, 255, 255, 0.8);
-      border-right: 1px solid rgba(255, 255, 255, 0.8);
-      outline: 1px solid rgba(0, 0, 0, 0.1); }
-    .content .main .nav-tabs > li.active > a,
-    .content .main .nav-tabs > li.active > a:hover,
-    .content .main .nav-tabs > li.active > a:focus {
-      background: #ff9600;
-      color: white;
+      -webkit-box-shadow: 0 1px 1px white inset;
+      box-shadow: 0 1px 1px white inset;
+      border: 1px solid #eee;
+      font-size: 10px;
+      font-family: "ProximaNova-Regular";
+      border-right: #c3c3c3 1px solid;
+      border-left: #f9f9f9 1px solid; }
+    .content .main .nav-tabs > li.active > a, .content .main .nav-tabs > li.active > a:hover, .content .main .nav-tabs > li.active > a:focus {
+      background: #ffa700;
+      color: #eee;
       border: none;
-      border-top: 1px solid rgba(255, 255, 255, 0.8);
-      outline: 1px solid #e0ae4e;
-      font-weight: bold; }
+      border: 1px solid #e0ae4e;
+      -webkit-box-shadow: 0 1px 1px white inset;
+      box-shadow: 0 1px 1px white inset;
+      font-weight: 500;
+      font-size: 11px; }
     .content .main .tab-content {
       padding: 15px; }
+  .content .show-menu-left {
+    display: block !important; }
 
 .form-container {
   background: #ffffff;
@@ -7730,7 +7736,13 @@ nav:not(.mm-menu) {
       font-size: 19px;
       color: #3b5a99; }
   .form-container .form-container-title {
-    font-family: "ProximaNova-Regular"; }
+    font-family: "ProximaNova-Regular";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    font-style: normal; }
+  .form-container .form-container-info {
+    font-size: 10px; }
 
 .slider-menu {
   padding: 50px 0 0;
@@ -7742,6 +7754,9 @@ nav:not(.mm-menu) {
     left: 0;
     height: 100%;
     width: 1px; }
+  .slider-menu .two-rows {
+    height: 40px;
+    overflow: hidden; }
   .slider-menu:after {
     right: 4%;
     left: auto; }
@@ -7749,6 +7764,20 @@ nav:not(.mm-menu) {
     right: -12px;
     width: 8px;
     background: transparent none repeat scroll 0 0; }
+  .slider-menu .prevPage {
+    position: absolute;
+    top: 0;
+    background-image: -webkit-linear-gradient(top, #d8d8d8 0%, #cbcbcb 100%);
+    background-image: -o-linear-gradient(top, #d8d8d8 0%, #cbcbcb 100%);
+    background-image: linear-gradient(to bottom, #d8d8d8 0%, #cbcbcb 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD8D8D8', endColorstr='#FFCBCBCB', GradientType=0); }
+  .slider-menu .nextPage {
+    background-image: -webkit-linear-gradient(top, #cbcbcb 0%, #d8d8d8 100%);
+    background-image: -o-linear-gradient(top, #cbcbcb 0%, #d8d8d8 100%);
+    background-image: linear-gradient(to bottom, #cbcbcb 0%, #d8d8d8 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCBCBCB', endColorstr='#FFD8D8D8', GradientType=0); }
   .slider-menu .scrollbar .handle {
     background: #a2a1a1;
     border-radius: 20px; }
@@ -7756,23 +7785,6 @@ nav:not(.mm-menu) {
     margin: 10px 0;
     padding-right: 14px; }
   .slider-menu .btn {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7d7d7+0,d1d1d1+47,cacaca+100 */
-    background: #d7d7d7;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #d7d7d7 0%, #d1d1d1 47%, #cacaca 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d7d7d7), color-stop(47%, #d1d1d1), color-stop(100%, #cacaca));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #d7d7d7 0%, #d1d1d1 47%, #cacaca 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #d7d7d7 0%, #d1d1d1 47%, #cacaca 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #d7d7d7 0%, #d1d1d1 47%, #cacaca 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, #d7d7d7 0%, #d1d1d1 47%, #cacaca 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', endColorstr='#cacaca',GradientType=0 );
-    /* IE6-9 */
     border: none !important;
     width: 100%;
     height: 40px;
@@ -7799,18 +7811,21 @@ nav:not(.mm-menu) {
       line-height: 20px;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); }
       .slider-menu .frame ul.items li .title-media {
-        font-size: 14px;
+        font-size: 12px;
         font-family: "ProximaNova-Light";
-        color: #9f9f9f; }
+        color: #545454;
+        line-height: 16px;
+        text-transform: uppercase; }
       .slider-menu .frame ul.items li .media {
         margin-top: 0; }
         .slider-menu .frame ul.items li .media .date {
-          font-size: 14px;
+          font-size: 11px;
           text-align: left;
           color: #545454;
-          font-weight: bold; }
+          font-weight: bold;
+          line-height: 16px; }
         .slider-menu .frame ul.items li .media .video-info {
-          font-size: 18px;
+          font-size: 14px;
           text-align: left;
           color: #545454; }
     .slider-menu .frame ul.items li.active {
@@ -7827,6 +7842,70 @@ nav:not(.mm-menu) {
         right: -12px;
         top: 50%;
         width: 10px; }
+
+.show-left-menu {
+  position: absolute;
+  left: 0;
+  top: 54px;
+  width: 4px;
+  background: #ffa700;
+  -webkit-box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  z-index: 10; }
+  .show-left-menu .btn-show-left-menu {
+    width: 175px;
+    background: #ffa700;
+    color: white;
+    font-weight: bold;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+    border: none;
+    line-height: 35px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+    .show-left-menu .btn-show-left-menu .fa {
+      font-size: 18px;
+      vertical-align: middle;
+      margin-left: 10px; }
+
+.hide-left-menu {
+  right: 0;
+  left: auto;
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 54px;
+  width: 4px;
+  background: #ffa700;
+  height: 100%;
+  z-index: 10; }
+  .hide-left-menu .btn-show-left-menu {
+    width: 60px;
+    background: #ffa700;
+    color: white;
+    font-weight: bold;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+    -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    position: absolute;
+    right: 0;
+    border: none;
+    line-height: 35px;
+    margin-top: 15px; }
+    .hide-left-menu .btn-show-left-menu .fa {
+      font-size: 18px;
+      vertical-align: middle;
+      margin-left: 10px; }
+    .hide-left-menu .btn-show-left-menu .fa-long-arrow-left:before {
+      content: "\f177"; }
+
+.hide-right {
+  display: none; }
 
 .social-link {
   position: fixed;
@@ -7859,14 +7938,18 @@ footer {
   position: fixed;
   width: 100%; }
   footer .footer-menu {
-    text-align: center; }
+    text-align: center;
+    margin: 0;
+    padding: 0; }
     footer .footer-menu li {
       list-style: none;
       display: inline-block;
-      margin: 0 10px;
+      margin: 0 5px;
       color: #989898;
       opacity: 0.5;
-      line-height: 55px; }
+      line-height: 55px;
+      font-size: 14px;
+      font-family: "ProximaNova-Regular"; }
       footer .footer-menu li a {
         color: #989898;
         font-family: 'ProximaNova-Light',arial;
@@ -7874,6 +7957,8 @@ footer {
         font-size: 14px;
         font-weight: 300;
         font-style: normal; }
+        footer .footer-menu li a:hover {
+          text-decoration: underline; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -7893,5 +7978,11 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     word-wrap: break-word; } }
+@media (max-width: 767px) {
+  .slider-menu .prevPage {
+    width: 98%; } }
+@media (max-width: 480px) {
+  .slider-menu .prevPage {
+    width: 97%; } }
 
 /*# sourceMappingURL=style.css.map */

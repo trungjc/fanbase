@@ -1,6 +1,4 @@
 
-//@import "regions/regions";
-
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -21,11 +19,8 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {  
-	.content{
-		.main{
-			//max-width: 90%;
-		}
-	}
+
+	
 }
 @media (min-width:1650px) {  
     .slider-menu .prevPage {
@@ -39,5 +34,15 @@
         overflow: hidden;
         text-overflow: ellipsis;
         word-wrap: break-word;
+    }
+}
+@media (max-width:767px) {  
+    .slider-menu .prevPage {
+        width: 98%;
+    }
+}
+@media (max-width:480px) {  
+    .slider-menu .prevPage {
+        width: 97%;
     }
 }
