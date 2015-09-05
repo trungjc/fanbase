@@ -1,0 +1,108 @@
+
+@font-face {
+  font-family: 'ProximaNova-Bold'; 
+  src: url("../fonts/pageFonts/ProximaNova-Bold.eot?v=4.3.0");
+  src: url("../fonts/pageFonts/ProximaNova-Bold.eot?#iefix&v=4.3.0") format("embedded-opentype"), 
+  		url("../fonts/pageFonts/ProximaNova-Bold.woff2?v=4.3.0") format("woff2"), 
+  		url("../fonts/pageFonts/ProximaNova-Bold.woff?v=4.3.0") format("woff"), 
+  		url("../fonts/pageFonts/ProximaNova-Bold.ttf?v=4.3.0") format("truetype"), 
+  		url("../fonts/pageFonts/ProximaNova-Bold.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'ProximaNova-Light'; 
+  src: url("../fonts/pageFonts/ProximaNova-Light.eot?v=4.3.0");
+  src: url("../fonts/pageFonts/ProximaNova-Light.eot?#iefix&v=4.3.0") format("embedded-opentype"), 
+  		url("../fonts/pageFonts/ProximaNova-Light.woff2?v=4.3.0") format("woff2"), 
+  		url("../fonts/pageFonts/ProximaNova-Light.woff?v=4.3.0") format("woff"), 
+  		url("../fonts/pageFonts/ProximaNova-Light.ttf?v=4.3.0") format("truetype"), 
+  		url("../fonts/pageFonts/ProximaNova-Light.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'ProximaNova-Regular'; 
+  src: url("../fonts/pageFonts/ProximaNova-Regular.eot?v=4.3.0");
+  src: url("../fonts/pageFonts/ProximaNova-Regular.eot?#iefix&v=4.3.0") format("embedded-opentype"), 
+  		url("../fonts/pageFonts/ProximaNova-Regular.woff2?v=4.3.0") format("woff2"), 
+  		url("../fonts/pageFonts/ProximaNova-Regular.woff?v=4.3.0") format("woff"), 
+  		url("../fonts/pageFonts/ProximaNova-Regular.ttf?v=4.3.0") format("truetype"), 
+  		url("../fonts/pageFonts/ProximaNova-Regular.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+.ProximaNova-Regular{
+	font-family: "ProximaNova-Regular";
+}
+.ProximaNova-Light{
+	font-family: "ProximaNova-Light";
+}
+.ProximaNova-Bold{
+	font-family: "ProximaNova-Bold";
+}
+
+
+body{
+	min-width: 300px;
+	background: #eee;
+}
+
+nav:not(.mm-menu)
+{
+	display: none;
+}
+
+.header,
+.content,
+.footer
+{
+	text-align: center;
+}
+.header,
+.footer{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	width: 100%;
+}
+.header.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.footer.fixed{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.header{
+	padding: 12px 40px;
+	background: #152c47;
+	.social-icon{
+		font-size: 20px;
+		color: #869aad;
+		margin-left: 10px;
+		line-height: 30px;
+		font-weight: bold;
+	}
+	.follow{
+		font-family: tahoma;
+		font-weight: normal;
+		text-shadow: 4px 0px 8px rgba(0, 0, 0, 0.32);
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	.menu-hambeger-icon{ 
+		background: center center no-repeat transparent;
+		background-image: url(' data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC ');
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 0;
+		left: 10px;
+	}
+	
+}

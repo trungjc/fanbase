@@ -1,0 +1,20 @@
+
+footer{
+	background: rgba(0, 0, 0, 0.1);
+	.footer-menu{
+		text-align: center;
+		li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 10px;
+			color: #989898;
+			opacity: 0.5;
+			line-height: 55px; 
+			a{
+				color: #989898;
+				font-family: tahoma;
+				font-weight: normal;
+			}
+		}
+	}
+}

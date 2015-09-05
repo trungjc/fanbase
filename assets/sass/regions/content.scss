@@ -1,0 +1,135 @@
+
+.content{
+	.main{
+		padding: 30px;
+		margin: auto;
+		background: rgba(255, 255, 255, 0.2);
+		.posted-date{
+			color: #689b00;
+			font-family: "ProximaNova-Regular";
+		}
+		.title-video{
+			color: #585858;
+			font-weight: bold;
+		}
+		.info-video{
+			font-size: 20px;
+			color: black;
+			font-family: "ProximaNova-Regular";
+		}
+		.media-title{
+		}
+		.other-media-tab{
+			background: rgba(0, 0, 0, 0.05);
+		}
+		.nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a{
+			border-radius: 0;
+			background: rgba(0, 0, 0, 0.05);
+			white-space: nowrap;
+			overflow: hidden;
+			color: #585858;
+			border: none;
+			border-top: 1px solid rgba(255, 255, 255, 0.8);
+			border-right: 1px solid rgba(255, 255, 255, 0.8);
+			outline: 1px solid rgba(0, 0, 0, 0.1);
+		}
+		.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+			background: #ff9600;
+			color: white;
+			border: none;
+			border-top: 1px solid rgba(255, 255, 255, 0.8);
+			outline: 1px solid #e0ae4e;
+			font-weight: bold; 
+		}
+		.tab-content{
+			padding: 15px;
+		}
+	}
+}
+.form-container{
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 6px;
+	padding: 20px 10px 10px;
+	margin-bottom: 15px;
+	.round-icon{
+		background: rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		display: block;
+	    height: 35px;
+	    margin: auto;
+	    padding: 8px 8px 0px 7px;
+	    width: 35px;
+		.fa-twitter{
+			font-size: 18px;
+			color: #a8bdd0;
+		}
+		.fa-facebook{
+			font-size: 18px;
+			color: #4f5189;
+		}
+	}
+	.form-container-title{
+		font-family: "ProximaNova-Regular";
+	}
+}
+.slider-menu{
+	padding: 50px 0;
+	position: relative;
+	.scrollbar{
+		right: -10px;
+	}
+	.prevPage{
+		position: absolute;
+		top: 0;
+	}
+	.controls{
+		margin: 10px 0;
+	}
+	.btn{
+		background: rgba(0, 0, 0, 0.1);
+		width: 100%;
+		height: 40px;
+		border-radius: 0;
+		-webkit-border-radius: 0px;
+		.fa{
+			font-size: 25px;
+			color: rgba(0, 0, 0, 0.3);
+		}
+	}
+	.frame{
+		border: none;
+		ul.items li{
+			background: rgba(255, 255, 255, 0.4);
+			margin: 4px 0;
+			border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+			padding: 5px 5px 10px 5px;
+			height: 110px;
+			line-height: 20px;
+			.title-media{
+				font-size: 14px;
+				font-family: "ProximaNova-Light";
+				color: #585858;
+			}
+			.media{
+				margin-top: 0;
+				.date{
+					font-size: 14px;
+					text-align: left;
+					color: #585858;
+					font-weight: bold;
+				}
+				.video-info{
+					font-size: 18px;
+					text-align: left;
+					color: #585858;
+				}
+			}
+		}
+		ul.items li.active{
+			background: rgba(0, 0, 0, 0.1);
+		}
+	}
+	
+	
+}

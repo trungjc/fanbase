@@ -1,2 +1,29 @@
 
-@import "regions/regions";
+//@import "regions/regions";
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+	
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {  
+	body{
+		min-width: 300px;
+		background: #eee;
+		padding: 0 36px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {  
+	.content{
+		.main{
+			max-width: 90%;
+		}
+	}
+}
