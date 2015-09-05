@@ -41,7 +41,7 @@
 						        $(window).scroll(function(){
 						            $('.show-left-menu, .hide-left-menu').height($(window).height() + $(window).scrollTop());
 						        });
-						        $('.btn-show-left-menu').click(function(){
+						        $('.btn-show-left-menu').on('click',function(){
 						        	
 						        	$('.show-left-menu').toggleClass('hide-left-menu');
 						        	$('.left-menu-page').toggleClass('show-menu-left')
@@ -431,7 +431,7 @@
                                     <div class="tab-mobile visible-xs-block">
                                     <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
                                         <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingOne">
+                                            <div class="panel-heading " role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 FEATURED (10)

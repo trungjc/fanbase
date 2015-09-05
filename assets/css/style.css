@@ -7939,7 +7939,7 @@ nav:not(.mm-menu) {
 .panel-group .panel {
   border-radius: 0 !important;
   border-color: #bfbfbf; }
-  .panel-group .panel .fa-caret-down {
+  .panel-group .panel .panel-heading .fa {
     color: white;
     font-size: 24px;
     position: absolute;
@@ -7954,6 +7954,12 @@ nav:not(.mm-menu) {
   text-align: left;
   padding: 8px 15px;
   position: relative; }
+  .panel-default > .panel-heading .collapsed + .fa-caret-down:before {
+    content: ""; }
+
+.panel-heading .panel-title a {
+  display: block;
+  text-decoration: none !important; }
 
 footer {
   background: #e1e1e1;

@@ -305,7 +305,7 @@
 }
 .panel-group .panel {
      border-radius: 0 !important; border-color: #bfbfbf;
-    .fa-caret-down {
+    .panel-heading .fa {
          color: white;
         font-size: 24px;
         position: absolute;
@@ -320,4 +320,11 @@
     color: #fff;
     text-align: left;
     padding:8px 15px;position:relative;
+    .collapsed  {
+      & + .fa-caret-down:before {content:  "\f0da";}
+    }
+}
+.panel-heading .panel-title a {
+    display: block;
+    text-decoration: none !important;
 }
