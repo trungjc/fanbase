@@ -36,15 +36,25 @@
         word-wrap: break-word;
     }
 }
-@media (max-width:767px) {  
+@media (max-width:767px) {
+    
+    .slider-menu .frame .items,.slider-menu .controls {
+        padding-right: 0;
+    }
+    .posted-date {
+        display: none;
+    }
     .slider-menu .prevPage {
-        width: 98%;
+        width: 100%;
+    }
+    h1, .h1 {
+        font-size: 40px;
+    }
+    .content .main .info-video {
+        font-size: 18px;
     }
 }
 @media (max-width:480px) {  
-    .slider-menu .prevPage {
-        width: 97%;
-    }
     footer .footer-menu li {
         margin: 0 2px;
     }
