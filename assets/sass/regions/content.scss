@@ -11,7 +11,7 @@
         }
         .posted-date{
 			color: #969696;
-			font-family: "ProximaNova-Regular";
+			font-family:  "ProximaNova-Regular",arial;
 		}
 		.title-video{
 			color: #585858;
@@ -20,7 +20,7 @@
 		.info-video{
 			font-size: 20px;
 			color: black;
-			font-family: "ProximaNova-Regular";
+			font-family:  "ProximaNova-Regular",arial;
 		}
 		.media-title{
 		}
@@ -38,7 +38,7 @@
 			@include box-shadow(0 1px 1px white inset);
 			border: 1px solid #eee;
 			font-size: 10px;
-			font-family: "ProximaNova-Regular";
+			font-family:  "ProximaNova-Regular",arial;
 			border-right: #c3c3c3 1px solid;
 			border-left: #f9f9f9 1px solid;
 		}
@@ -83,7 +83,7 @@
 		}
 	}
 	.form-container-title{
-		font-family: "ProximaNova-Regular";
+		font-family:  "ProximaNova-Regular",arial;
 		font-size: 15px;
 		font-weight: 300;
 		line-height: 24px;
@@ -170,7 +170,7 @@
             box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 			.title-media{
 				font-size: 12px;
-				font-family: "ProximaNova-Light";
+				font-family: "ProximaNova-Light",arial;
 				color: #545454;
 				line-height: 16px;
 				text-transform: uppercase;

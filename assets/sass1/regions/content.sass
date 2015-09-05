@@ -1,0 +1,278 @@
+.content
+  padding-bottom: 66px
+  .main
+    padding: 30px 0
+    background: #f6f6f6
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3)
+    .content-body  
+      width: 80%
+      margin: 0px auto
+    .posted-date
+      color: #969696
+      font-family: "ProximaNova-Regular",arial
+    .title-video
+      color: #585858
+      font-weight: bold
+    .info-video
+      font-size: 20px
+      color: black
+      font-family: "ProximaNova-Regular",arial
+    .media-title
+    .other-media-tab
+      background: #f0f0f0
+    .nav-tabs-justified > li > a,
+    .nav-tabs.nav-justified > li > a
+      border-radius: 0
+      background: #e1dfdf
+      white-space: nowrap
+      overflow: hidden
+      color: #585858
+      border: none
+      +box-shadow(0 1px 1px white inset)
+      border: 1px solid #eee
+      font-size: 10px
+      font-family: "ProximaNova-Regular",arial
+      border-right: #c3c3c3 1px solid
+      border-left: #f9f9f9 1px solid
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+      background: #ffa700
+      color: #eee
+      border: none
+      border: 1px solid #e0ae4e
+      +box-shadow(0 1px 1px white inset)
+      font-weight: 500
+      font-size: 11px
+    .tab-content
+      padding: 15px
+  .show-menu-left
+    display: block !important
+
+.form-container
+  background: #ffffff
+  border-radius: 6px
+  padding: 20px 10px 10px
+  margin-bottom: 15px
+  .round-icon
+    background: #eeeeee
+    border-radius: 50%
+    display: block
+    height: 38px
+    margin: auto
+    line-height: 44px
+    text-align: center
+    width: 38px
+    .fa-twitter
+      font-size: 19px
+      color: #9ed2e8
+    .fa-facebook
+      font-size: 19px
+      color: #3b5a99
+  .form-container-title
+    font-family: "ProximaNova-Regular",arial
+    font-size: 15px
+    font-weight: 300
+    line-height: 24px
+    font-style: normal
+  .form-container-info
+    font-size: 10px
+
+.slider-menu
+  padding: 50px 0 0
+  &:before,&:after
+    background: #888
+    //content:"";
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 1px
+  .two-rows
+    height: 40px
+    overflow: hidden
+  &:after
+    right: 4%
+    left: auto
+  position: relative
+  .scrollbar
+    right: -12px
+    width: 8px
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0
+  .prevPage
+    position: absolute
+    top: 0
+    +gradient-vertical(#d8d8d8, #cbcbcb, $start_percent: 0%, $end_percent: 100%)
+  .nextPage
+    +gradient-vertical(#cbcbcb, #d8d8d8, $start_percent: 0%, $end_percent: 100%)
+  .scrollbar .handle
+    background: #a2a1a1
+    border-radius: 20px
+  .controls
+    margin: 10px 0
+    padding-right: 14px
+  .btn
+    border: none !important
+    width: 100%
+    height: 40px
+    border-radius: 0
+    -webkit-border-radius: 0px
+    .fa
+      font-size: 25px
+      color: rgba(0, 0, 0, 0.3)
+  .prevPage
+    position: absolute
+    top: 0
+    left: 0
+    width: 95%
+  .frame
+    border: none
+    // background:#f6f6f6;
+    //box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    .items
+      padding-right: 14px
+    ul.items li
+      background: #fff
+      margin: 4px 0
+      border-bottom: 3px solid #c2c2c2
+      padding: 5px 5px 10px 5px
+      min-height: 110px
+      line-height: 20px
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1)
+      .title-media
+        font-size: 12px
+        font-family: "ProximaNova-Light",arial
+        color: #545454
+        line-height: 16px
+        text-transform: uppercase
+      .media
+        margin-top: 0
+        .date
+          font-size: 11px
+          text-align: left
+          color: #545454
+          font-weight: bold
+          line-height: 16px
+        .video-info
+          font-size: 14px
+          text-align: left
+          color: #545454
+    ul.items li.active
+      background: #e8e8e8
+      position: relative
+      box-shadow: 1px 1px 3px white inset
+      &:after
+        background: rgba(0, 0, 0, 0) url("../images/arrow-slide.png") no-repeat scroll left top / 100% auto
+        content: ""
+        display: block
+        height: 40px
+        margin-top: -20px
+        position: absolute
+        right: -12px
+        top: 50%
+        width: 10px
+
+.show-left-menu
+  position: absolute
+  left: 0
+  top: 54px
+  width: 4px
+  background: #ffa700
+  +box-shadow(1px 0px 1px rgba(0, 0, 0, 0.5))
+  height: 100%
+  z-index: 10
+  .btn-show-left-menu
+    width: 175px
+    background: #ffa700
+    color: white
+    font-weight: bold
+    +border-right-radius(18px)
+    border: none
+    line-height: 35px
+    margin-top: 15px
+    +box-shadow(0 1px 1px rgba(0, 0, 0, 0.5))
+    .fa
+      font-size: 18px
+      vertical-align: middle
+      margin-left: 10px
+    .fa-long-arrow-left::before
+      //content: "";
+
+.hide-left-menu
+  right: 0
+  left: auto
+  +box-shadow(-1px 1px 1px rgba(0, 0, 0, 0.5))
+  position: absolute
+  top: 54px
+  width: 4px
+  background: #ffa700
+  height: 100%
+  z-index: 10
+  .btn-show-left-menu
+    width: 60px
+    background: #ffa700
+    color: white
+    font-weight: bold
+    +border-left-radius(18px)
+    +box-shadow(-1px 1px 1px rgba(0, 0, 0, 0.5))
+    +border-right-radius(0px)
+    position: absolute
+    right: 0
+    border: none
+    line-height: 35px
+    margin-top: 15px
+    .fa
+      font-size: 18px
+      vertical-align: middle
+      margin-left: 10px
+    .fa-long-arrow-left:before
+      content: "\f177"
+
+.hide-right
+  display: none
+
+.social-link
+  position: fixed
+  right: 0
+  top: 50%
+  margin-top: -32px
+  a
+    display: block
+    color: white
+    font-size: 30px
+    width: 53px
+    display: block
+    height: 55px
+    text-align: center
+    &:hover
+      opacity: 0.8
+    i
+      position: relative
+      top: 8px
+  .face-icon
+    background: #215a96
+  .twitter-icon
+    background: #3eb4e3
+  .google-icon
+    background: #f43e32
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body
+  background: #f0f0f0 none repeat scroll 0 0
+  border-top-color: #ddd
+
+.panel-group .panel
+  border-radius: 0 !important
+  border-color: #bfbfbf
+  .fa-caret-down
+    color: white
+    font-size: 24px
+    position: absolute
+    right: 6px
+    top: 3px
+
+.panel-default > .panel-heading
+  background-color: #b2b2b2
+  border-color: #ddd
+  border-radius: 0 !important
+  color: #fff
+  text-align: left
+  padding: 8px 15px
+  position: relative

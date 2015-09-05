@@ -36,6 +36,14 @@
         word-wrap: break-word;
     }
 }
+
+@media (max-width: 980px){
+.nav-justified > li, .nav-tabs.nav-justified > li {
+    display: block;
+    width: auto;
+}
+      
+}
 @media (max-width:767px) {
     
     .slider-menu .frame .items,.slider-menu .controls {
