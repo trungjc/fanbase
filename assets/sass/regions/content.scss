@@ -37,11 +37,13 @@
 			border: none;
 			@include box-shadow(0 1px 1px white inset);
 			border: 1px solid #eee;
-			font-size: 10px;
-			font-family:  "ProximaNova-Regular",arial;
+			font-size: 11px;
 			border-right: #c3c3c3 1px solid;
 			border-left: #f9f9f9 1px solid;
 		}
+        .nav-tabs-justified > li:last-child > a {
+            border-right: none;
+        }
 		.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
 			background: #ffa700;
 			color: #eee;
@@ -50,6 +52,7 @@
 			@include box-shadow(0 1px 1px white inset);
 			font-weight: 500; 
 			font-size: 11px;
+            font-weight: bold;
 		}
 		.tab-content{
 			padding: 15px;
@@ -94,7 +97,8 @@
 	}
 }
 .slider-menu{
-	padding: 50px 0 0;
+	padding: 50px 0 0;    
+    border-left: 3px solid rgba(0, 0, 0, 0.02);
     &:before,&:after {
         background: #888;
         //content:"";
@@ -159,6 +163,9 @@
         //box-shadow: 0 0 3px rgba(0,0,0,0.3);
         .items {
          padding-right: 14px;
+            a:hover{
+            text-decoration: none;
+            }
         }
 		ul.items li{
 			background: #fff;
@@ -211,14 +218,54 @@
 
 }
 .show-left-menu{
-	position: absolute;
+	right: 0;
+	left: auto;
+	@include box-shadow(-1px 1px 1px rgba(0, 0, 0, 0.5));
+	position: fixed;
+	top: 54px;
+	width: 4px;
+	background: #ffa700;
+	height: 100%;
+	z-index: 100;
+    .btn-text,.fa-long-arrow-right {
+        display: none;
+    }
+	.btn-show-left-menu{
+		width: 50px;
+		background: #ffa700;
+		color: white;
+		font-weight: bold;
+		@include border-left-radius(18px);
+		@include box-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+		@include border-right-radius(0px);
+		position: absolute;
+		right: 0;
+		border: none;
+		line-height: 35px;
+		margin-top: 8px;
+        &:hover {text-decoration: none}
+		.fa{
+			font-size: 18px;
+			vertical-align: middle;
+			margin-left: 10px; 
+            position: relative;
+            top: -1px;
+		}
+		.fa-long-arrow-left:before {
+		    content: "\f177";
+		}
+	}
+}
+
+.hide-left-menu{
+	position: fixed;
 	left: 0;
 	top: 54px;
 	width: 4px;
 	background: #ffa700;
 	@include box-shadow(1px 0px 1px rgba(0, 0, 0, 0.5));
 	height: 100%;
-	z-index: 10;
+	z-index: 100;
 	.btn-show-left-menu{
 		width: 175px;
 		background: #ffa700;
@@ -226,9 +273,12 @@
 		font-weight: bold;
 		@include border-right-radius(18px);
 		border: none;
+        position: absolute;
+        text-align: left;
 		line-height: 35px;
-		margin-top: 15px;
-		@include box-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+		margin-top: 8px;
+		@include box-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+         &:hover {text-decoration: none}
 		.fa{
 			font-size: 18px;
 			vertical-align: middle;
@@ -239,52 +289,19 @@
 		}
 	}
 }
-.hide-left-menu{
-	right: 0;
-	left: auto;
-	@include box-shadow(-1px 1px 1px rgba(0, 0, 0, 0.5));
-	position: absolute;
-	top: 54px;
-	width: 4px;
-	background: #ffa700;
-	height: 100%;
-	z-index: 10;
-	.btn-show-left-menu{
-		width: 60px;
-		background: #ffa700;
-		color: white;
-		font-weight: bold;
-		@include border-left-radius(18px);
-		@include box-shadow(-1px 1px 1px rgba(0, 0, 0, 0.5));
-		@include border-right-radius(0px);
-		position: absolute;
-		right: 0;
-		border: none;
-		line-height: 35px;
-		margin-top: 15px;
-		.fa{
-			font-size: 18px;
-			vertical-align: middle;
-			margin-left: 10px;
-		}
-		.fa-long-arrow-left:before {
-		    content: "\f177";
-		}
-	}
-}
 .hide-right{
 	display: none;
 }
 
 .social-link {
     position: fixed;
-    right:0 ;
+    right:15px ;
     top: 50%;
     margin-top: -32px;
     a {
         display: block;
         color: white;
-        font-size:30px;
+        font-size:30px; 
         width:53px;
         display: block;
         height: 55px;
@@ -327,4 +344,31 @@
 .panel-heading .panel-title a {
     display: block;
     text-decoration: none !important;
+}
+
+.action-tweet {
+    margin: 0;
+    span {
+        margin: 0 10px;
+    }
+}
+.heading-video { 
+    display: none;
+    top: 54px;
+    border-bottom: 1px solid #cacaca;
+    left: 0;
+    color:#8d8d8d;
+    z-index: 99; padding: 12px 0;
+    position:fixed;
+    width: 100%;
+    font-size: 20px;
+    font-family:  "ProximaNova-Regular",arial;
+    @include gradient-vertical(#d8d8d8, #cacaca, $start-percent: 0%, $end-percent: 100%);
+    @include box-shadow(0 2px 3px rgba(0, 0, 0, 0.34));
+}
+
+.social-top {
+    .fa {
+            text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.5);
+    }
 }
