@@ -185,7 +185,7 @@
   background: #ffa700
   height: 100%
   z-index: 100
-  .btn-text,.fa-long-arrow-right
+  .btn-text
     display: none
   .btn-show-left-menu
     width: 50px
@@ -226,11 +226,13 @@
     color: white
     font-weight: bold
     +border-right-radius(18px)
+    +border-left-radius(0px)
     border: none
     position: absolute
     text-align: left
     line-height: 35px
     margin-top: 8px
+    left: 0
     +box-shadow(0px 1px 1px rgba(0, 0, 0, 0.2))
     &:hover
       text-decoration: none
@@ -238,8 +240,11 @@
       font-size: 18px
       vertical-align: middle
       margin-left: 10px
-    .fa-long-arrow-left::before
-      //content: "";
+    .fa-long-arrow-right::before
+      content: ""
+    .btn-text
+      display: none
+      margin-left: 20px
 
 .hide-right
   display: none
