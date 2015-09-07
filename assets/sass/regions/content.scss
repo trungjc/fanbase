@@ -252,7 +252,7 @@
             top: -1px;
 		}
 		.fa-long-arrow-left:before {
-		    content: "\f177";
+		    //content: "\f177";
 		}
 	}
 }
@@ -287,7 +287,7 @@
 			margin-left: 10px;
 		}
 		.fa-long-arrow-right::before {
-		    content: "";
+		   // content: "";
 		}
 		.btn-text{
 		  display: none;
@@ -367,7 +367,7 @@
     z-index: 99; padding: 12px 0;
     position:fixed; 
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     font-family:  "ProximaNova-Regular",arial; 
     @include gradient-vertical(#d8d8d8, #cacaca, $start-percent: 0%, $end-percent: 100%);
     @include box-shadow(0 2px 3px rgba(0, 0, 0, 0.34));
